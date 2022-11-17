@@ -26,14 +26,14 @@ body {
 }
 main {
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr/1fr;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr;
 	justify-items: stretch;
 	align-items: stretch;
 
-    width: 375px;
+    width: 23.438rem;                           /* <= 375px */
     min-height: auto;
-    margin: 50px auto 0 auto;
-    font-size: 15px;
+    margin: 3.125rem auto 0 auto;               /* <= 50px */
+    font-size: 0.938em;                         /* <= 15px */
 }
 
 
@@ -46,21 +46,21 @@ main .one {
     background-position: center;
     background-size: contain;
 
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;                    /* <= 10px */
 }
 main .one header h1 {
     color: var(--VeryDarkMagenta);
-    font-size: 43px;
+    font-size: 2.688em;                         /* <= 43px */
     font-weight: 700;
     text-align: center;
-    padding: 0px 10px;
-    margin: 20px 0px 5px 0px;
+    padding: 0rem 0.625rem;                     /* <= 10px */                        
+    margin: 1.25rem 0rem 0.313rem 0rem;         /* <= 20px */
 }
 main .one > p {
     color: var(--DarkGrayishMagenta);
     text-align: center;
-    padding: 0px 45px;
-    margin: 25px 0px;
+    padding: 0rem 2.813rem;                     /* <= 45px */                
+    margin: 1.563rem 0px;                       /* <= 25px */
     line-height: 1.4;
 }
 
@@ -70,22 +70,22 @@ main .two {
     grid-column: 1/2;
 	grid-row: 2/3;
 
-    margin-bottom: 25px;
+    margin-bottom: 1.563rem;                    /* <= 25px */
 }
 main .two > .notation {
     background-color: var(--LightGrayishMagenta);
     border-radius: 10px;
-    margin: 0px 25px 20px 25px;
+    margin: 0rem 1.563rem 1.25rem 1.563rem;     /* <= 20px & 25px */
     text-align: center;
 }
 main .two .notation > img {
-    margin: 15px 0px 10px 0px;
+    margin: 0.938rem 0rem 10px 0rem;            /* <= 15px & 10px */
 }
 main .two .notation > h6 {
     color: var(--VeryDarkMagenta);
-    font-size: 17px;
+    font-size: 1.063em;                         /* <= 17px */
     font-weight: 700;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;                   /* <= 10px */
 }
 
 
@@ -93,21 +93,21 @@ main .two .notation > h6 {
 main .customer-reviews {
     background-color: var(--VeryDarkMagenta);
     border-radius: 10px;
-    margin: 0px 25px 0px 25px;
-    height: 245px;
+    margin: 0rem 1.563rem 0rem 1.563rem;        /* <= 25px */
+    height: 15.313rem;                          /* <= 245px */
 }
 main .customer-reviews > header {
-    margin: 35px 0px 0px 20px;    
+    margin: 2.188rem 0rem 0rem 1.25rem;         /* <= 35px & 20px */        
 }
 main .customer-reviews > header :not(img) {
     display: flex;
     position: relative;
-    transform: translate(70px, -50px);
+    transform: translate(70px, -50px);   /*     <= 70px & -50px */
     width: 32%;
 }
 .customer-reviews header img {
     border-radius: 50%;
-    width: 50px;
+    width: 3.125rem;                            /* <= 50px */
 }
 .customer-reviews header h6 {
     color: #f3f3f3;
@@ -123,11 +123,11 @@ main .customer-reviews > header :not(img) {
 main .customer-reviews p {
     color: #f3f3f3;
     text-align: left;
-    padding: 0px 30px 0px 20px;
+    padding: 0rem 1.875rem 0rem 1.25rem;        /* <= 30px & 20px */
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 1px;
-    margin-top: -15px;
+    margin-top: -0.938rem;                      /* <= 15px */
 }
 
 main .three {
@@ -138,21 +138,20 @@ main .three {
 main .four {
     grid-column: 1/2;
 	grid-row: 4/5;
-    margin-top: -35px;
+    margin-top: -2.188rem;                      /* <= -35px */                         
 }
 main .five {
     grid-column: 1/2;
 	grid-row: 5/6;
-    margin-top: -70px;
+    margin-top: -4.375rem;                      /* <= -70px */
 }
 
-
-
+/* Footer */
 .attribution {
-    font-size: 14px;
+    font-size: 0.875em;                         /* <= 14px */
     text-align: center;
     color: var(--DarkGrayishMagenta);
-    margin-top: -100px;
+    margin-top: -6.25rem;                       /* <= -100px */
     
 }
 .attribution a {
@@ -173,29 +172,29 @@ main .five {
     }
     main {
         grid-template: 1fr 1fr / 1fr 1fr 1fr;
-        min-height: 600px;
-        width: 1000px;
+        min-height: 37.5rem;                    /* <= 600px */
+        width: 62.5rem;                         /* <= 1000px */
         margin: 100px auto 100px auto;
     }
 
+    /* Section 1 */
     main .one {
         background-image: url('./images/bg-pattern-top-desktop.svg');
     }
     main .one header h1 {
         font-size: 50px;
         text-align: left;
-        padding: 0px 0px 0px 0px;
-        margin: 0px;
+        padding: 0rem;
+        margin: 0rem;
     }
     main .one > p {
         text-align: left;
-        padding: 0px 0px;
-        margin: 30px 0px;
+        padding: 0rem;
+        margin: 1.875rem 0rem;                  /* <= 30px */  
         line-height: 1.5;
     }
 
-
-
+    /* Section 2 */
     main .two {
         grid-column: 2/4;
 	    grid-row: 1/2;
@@ -206,39 +205,38 @@ main .five {
     }
     main .two > .notation {
         border-radius: 10px;
-        margin: 0px 0px 25px 0px;
-        padding: 5px 0px;
-        width: 400px;
+        margin: 0rem 0rem 1.563rem 0rem;        /* <= 25px */
+        padding: 5px 0rem;
+        width: 25rem;                           /* <= 400px */
         display: flex;
     }
     main .two > div:nth-of-type(1) {
         position: relative;
-        transform: translate(0px, 0px);
+        transform: translate(0rem, 0rem);
     }
     main .two > div:nth-of-type(2) {
         position: relative;
-        transform: translate(50px, 0px);
+        transform: translate(50px, 0rem);       /* <= 50px */
     }
     main .two > div:nth-of-type(3) {
         position: relative;
-        transform: translate(100px, 0px);
+        transform: translate(100px, 0rem);      /* <= 100px */
     }
     main .two .notation :nth-child(1) {
-        margin-left: 25px;
+        margin-left: 1.563rem;                  /* <= 25px */
     }
     main .two .notation > img {
-        margin: 15px 5px 10px 0px;
+        margin: 0.938rem 0.313rem 0.625rem 0rem;
     }
     main .two .notation > h6 {
-        font-size: 18px;
-        margin: 15px 0px 0px 20px;
+        font-size: 1.125em;                     /* <= 18px */
+        margin: 0.938rem 0rem 0rem 1.25rem;
     }
-    
     main .two #notation-one {
-        margin-left: 50px;
+        margin-left: 3.125rem;                  /* <= 50px */
     }
     main .two #notation-two {
-        margin-left: 75px;
+        margin-left: 4.688rem;                  /* <= 75px */       
     }
     main .two #notation-three {
         position: relative;
@@ -252,38 +250,38 @@ main .five {
         grid-column: 1/2;
 	    grid-row: 2/3;
 
-        margin: 0px 0px 0px 0px;
-        width: 300px;
+        margin: 0rem;
+        width: 18.75rem;                        /* <= 300px */
     }
     main section:nth-of-type(4) {
         grid-column: 2/3;
 	    grid-row: 2/3;
 
-        margin: 35px 0px 0px 0px;
-        width: 300px;
-        padding: 0px;
+        margin: 2.188rem 0rem 0rem 0rem;        /* <= 35px */
+        width: 18.75rem;                        /* <= 300px */
+        padding: 0rem;
     }
     main section:nth-of-type(5) {
         grid-column: 3/4;
 	    grid-row: 2/3;
 
-        margin: 75px 0px 0px 0px;
-        width: 300px;
+        margin: 4.688rem 0rem 0rem 0rem;
+        width: 18.75rem;                        /* <= 300px */                            
     }
     
     main .customer-reviews > header :not(img) {
         width: 35%;
     }
     main .customer-reviews p {
-        padding: 0px 10px 0px 25px;
-        margin-top: -30px;
+        padding: 0rem 0.625rem 0rem 1.563rem;
+        margin-top: -1.875rem;                  /* <= -30px */
     }
     main #three p {
-        padding: 0px 20px 0px 20px;
+        padding: 0rem 1.25rem 0rem 1.25rem;
     }
 
     .attribution {
-        margin-bottom: 0px;
+        margin-bottom: 0rem;
     }
 }
 
